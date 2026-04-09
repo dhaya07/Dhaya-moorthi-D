@@ -33,9 +33,9 @@ typedef struct {
 } Engineer;
 
 Engineer me = {
-    .degree   = "B.E / B.Tech — Electronics & Communication / Computer Science",
-    .college  = "Your College Name",
-    .location = "Your City, India 🇮🇳",
+    .degree   = "B.E / B.Tech — Electronics & Communication / Electronics and Communication Engineer",
+    .college  = "Jansons Institute of Technology",
+    .location = "Tiruppur, TamilNadu, India 🇮🇳",
     .focus    = { "Embedded Linux", "Yocto Project", "Board Bring-Up",
                   "Firmware", "RTOS", "Hardware Testing", "Device Drivers" },
     .mindset  = "Write code that runs bare-metal. Build systems that last."
@@ -55,8 +55,6 @@ I work at the intersection of **hardware and software** — designing and verify
       <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white"/>
       <img src="https://img.shields.io/badge/C++-00427E?style=flat-square&logo=cplusplus&logoColor=white"/>
       <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnubash&logoColor=white"/>
-      <img src="https://img.shields.io/badge/Assembly-525252?style=flat-square&logo=assemblyscript&logoColor=white"/>
     </td>
   </tr>
   <tr>
@@ -156,22 +154,6 @@ I work at the intersection of **hardware and software** — designing and verify
   </tr>
   <tr>
     <td width="50%">
-      <h3>🍓 Raspberry Pi — Hardware Testing Framework</h3>
-      <p>Automated hardware validation suite for PCB bring-up and peripheral testing on Raspberry Pi CM4.</p>
-      <ul>
-        <li>GPIO, SPI, I2C, and UART loopback test scripts</li>
-        <li>Ethernet link & throughput validation</li>
-        <li>Pass/fail logging with JSON reports</li>
-        <li>Designed for factory-floor production testing</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat-square"/>
-        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/>
-        <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logoColor=black"/>
-        <img src="https://img.shields.io/badge/GPIO-4EAA25?style=flat-square"/>
-      </p>
-    </td>
-    <td width="50%">
       <h3>📡 ESP32 — IoT Gateway Firmware</h3>
       <p>Multi-protocol IoT gateway firmware on ESP32 bridging field sensors to cloud.</p>
       <ul>
@@ -228,10 +210,7 @@ I work at the intersection of **hardware and software** — designing and verify
 
 ## 🏆 Achievements
 
-| 🏆 | **Achievement Name Here** | Brief description |
-|---|---|---|
-| 🥈 | **Competition / Hackathon Name** | National-level embedded / IoT challenge |
-| 🏅 | **Paper / Certification** | Published / certified in embedded systems |
+| 🏆 | **TNSCST Competition** | Participated in the Govt Organized competition and received Fund for the project |
 
 ---
 
