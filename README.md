@@ -7,13 +7,13 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/YOUR-USERNAME">
+  <a href="https://github.com/dhaya07">
     <img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=00ff88"/>
   </a>
   <a href="https://www.linkedin.com/in/YOUR-PROFILE/">
     <img src="https://img.shields.io/badge/LinkedIn-0a0f0a?style=for-the-badge&logo=linkedin&logoColor=00ff88"/>
   </a>
-  <a href="mailto:YOUR@EMAIL.COM">
+  <a href="mailto:dhayamoorthi7@gmail.com">
     <img src="https://img.shields.io/badge/Email-0a0f0a?style=for-the-badge&logo=gmail&logoColor=00ff88"/>
   </a>
   <img src="https://komarev.com/ghpvc/?username=YOUR-USERNAME&label=Profile+Views&color=00ff88&style=for-the-badge&labelColor=0d1117" />
