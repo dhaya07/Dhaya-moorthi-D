@@ -16,7 +16,7 @@
 <a href="mailto:dhayamoorthi7@gmail.com">
 <img src="https://img.shields.io/badge/Email-0a0f0a?style=for-the-badge&logo=gmail&logoColor=00ff88"/>
 </a>
-<img src="https://komarev.com/ghpvc/?username=YOUR-USERNAME&label=Profile+Views&color=00ff88&style=for-the-badge&labelColor=0d1117" />
+<img src="https://komarev.com/ghpvc/?username=dhaya07&label=Profile+Views&color=00ff88&style=for-the-badge&labelColor=0d1117" />
 </p>
 
 ---
@@ -154,6 +154,25 @@ I work at the intersection of **hardware and software** — designing and verify
 </tr>
 <tr>
 <td width="50%">
+ <h3>🌡️ Heat Pump Monitoring System — Field IoT Gateway</h3>
+ <p>End-to-end field data acquisition system monitoring heat pumps in real-time using <b>Modbus RS485</b> and dual-mode MQTT uplink.</p>
+ <ul>
+   <li>Modbus RTU acquisition via RS485 → TTL converter to ESP32/MCU</li>
+   <li>Polls heat pump registers: temperature, pressure, compressor state, COP, fault codes</li>
+   <li>Dual uplink: <b>Wi-Fi MQTT</b> (local network) + <b>GSM MQTT</b> (SIM800L/EC21 fallback for field sites)</li>
+   <li>Configurable poll interval, register map, and MQTT topic routing per unit</li>
+ </ul>
+ <p>
+   <img src="https://img.shields.io/badge/Modbus%20RTU-FF6600?style=flat-square"/>
+   <img src="https://img.shields.io/badge/RS485-333333?style=flat-square"/>
+   <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square"/>
+   <img src="https://img.shields.io/badge/MQTT-660066?style=flat-square"/>
+   <img src="https://img.shields.io/badge/GSM%20SIM800L-00897B?style=flat-square"/>
+   <img src="https://img.shields.io/badge/FreeRTOS-003153?style=flat-square"/>
+   <img src="https://img.shields.io/badge/C-00599C?style=flat-square"/>
+ </p>
+</td>
+<td width="50%">
  <h3>📡 ESP32 — IoT Gateway Firmware</h3>
  <p>Multi-protocol IoT gateway firmware on ESP32 bridging field sensors to cloud.</p>
  <ul>
@@ -217,12 +236,12 @@ I work at the intersection of **hardware and software** — designing and verify
 ## 📊 GitHub Stats
 
 <p align="center">
-<img width="49%" src="https://github-readme-stats-fast.vercel.app/api?username=YOUR-USERNAME&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" />
-<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR-USERNAME&theme=chartreuse-dark&hide_border=true" />
+<img width="49%" src="https://github-readme-stats-fast.vercel.app/api?username=dhaya07&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" />
+<img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=dhaya07&theme=chartreuse-dark&hide_border=true" />
 </p>
 
 <p align="center">
-<img width="42%" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=YOUR-USERNAME&theme=chartreuse-dark&hide_border=true&layout=compact&langs_count=8" />
+<img width="42%" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=dhaya07&theme=chartreuse-dark&hide_border=true&layout=compact&langs_count=8" />
 </p>
 
 ---
@@ -230,7 +249,7 @@ I work at the intersection of **hardware and software** — designing and verify
 ## 📈 Contribution Graph
 
 <p align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR-USERNAME&theme=chartreuse-dark&hide_border=true&area=true&color=00ff88&line=00cc66&point=ffffff" />
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=dhaya07&theme=chartreuse-dark&hide_border=true&area=true&color=00ff88&line=00cc66&point=ffffff" />
 </p>
 
 ---
