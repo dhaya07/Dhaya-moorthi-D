@@ -160,7 +160,9 @@ I work at the intersection of **hardware and software** — designing and verify
    <li>Modbus RTU acquisition via RS485 → TTL converter to ESP32/MCU</li>
    <li>Polls heat pump registers: temperature, pressure, compressor state, COP, fault codes</li>
    <li>Dual uplink: <b>Wi-Fi MQTT</b> (local network) + <b>GSM MQTT</b> (SIM800L/EC21 fallback for field sites)</li>
+   <li>Automatic uplink failover — switches GSM ↔ Wi-Fi based on signal availability</li>
    <li>Configurable poll interval, register map, and MQTT topic routing per unit</li>
+   <li>Watchdog + reconnect logic for unattended 24/7 field deployment</li>
  </ul>
  <p>
    <img src="https://img.shields.io/badge/Modbus%20RTU-FF6600?style=flat-square"/>
