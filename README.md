@@ -10,7 +10,7 @@
   <a href="https://github.com/dhaya07">
     <img src="https://img.shields.io/badge/GitHub-0d1117?style=for-the-badge&logo=github&logoColor=00ff88"/>
   </a>
-  <a href="https://www.linkedin.com/in/YOUR-PROFILE/">
+  <a href="https://www.linkedin.com/in/dhayamoorthi/">
     <img src="https://img.shields.io/badge/LinkedIn-0a0f0a?style=for-the-badge&logo=linkedin&logoColor=00ff88"/>
   </a>
   <a href="mailto:dhayamoorthi7@gmail.com">
