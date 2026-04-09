@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0f0a,50:0d2b0d,100:0a1a0a&height=200&section=header&text=Dhaya%20moorthi&fontSize=52&fontColor=00ff88&fontAlignY=38&desc=Embedded%20Systems%20Engineer%20%7C%20Linux%20%E2%80%A2%20Yocto%20%E2%80%A2%20Firmware%20%E2%80%A2%20Hardware&descSize=17&descAlignY=58&descColor=7aff7a&animation=fadeIn"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0f0a,50:0d2b0d,100:0a1a0a&height=200&section=header&text=Dhaya%20moorthi.D&fontSize=52&fontColor=00ff88&fontAlignY=38&desc=Embedded%20Systems%20Engineer%20%7C%20Linux%20%E2%80%A2%20Yocto%20%E2%80%A2%20Firmware%20%E2%80%A2%20Hardware&descSize=17&descAlignY=58&descColor=7aff7a&animation=fadeIn"/>
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
   <a href="mailto:dhayamoorthi7@gmail.com">
     <img src="https://img.shields.io/badge/Email-0a0f0a?style=for-the-badge&logo=gmail&logoColor=00ff88"/>
   </a>
-  <img src="https://komarev.com/ghpvc/?username=YOUR-USERNAME&label=Profile+Views&color=00ff88&style=for-the-badge&labelColor=0d1117" />
+  <img src="https://komarev.com/ghpvc/?username=dhaya07&label=Profile+Views&color=00ff88&style=for-the-badge&labelColor=0d1117" />
 </p>
 
 ---
@@ -33,7 +33,7 @@ typedef struct {
 } Engineer;
 
 Engineer me = {
-    .degree   = "B.E / B.Tech — Electronics & Communication / Electronics and Communication Engineer",
+    .degree   = "B.E — Electronics and Communication Engineering",
     .college  = "Jansons Institute of Technology",
     .location = "Tiruppur, TamilNadu, India 🇮🇳",
     .focus    = { "Embedded Linux", "Yocto Project", "Board Bring-Up",
@@ -87,6 +87,7 @@ I work at the intersection of **hardware and software** — designing and verify
       <img src="https://img.shields.io/badge/Ethernet-0078D4?style=flat-square&logo=ethernet&logoColor=white"/>
       <img src="https://img.shields.io/badge/CAN%20Bus-333333?style=flat-square&logo=canbus&logoColor=lime"/>
       <img src="https://img.shields.io/badge/USB-009AC7?style=flat-square&logo=usb&logoColor=white"/>
+      <img src="https://img.shields.io/badge/Modbus%20RS485-FF6600?style=flat-square&logo=modbus&logoColor=white"/>
     </td>
   </tr>
   <tr>
@@ -118,6 +119,53 @@ I work at the intersection of **hardware and software** — designing and verify
 ## 💼 Featured Projects
 
 <table>
+  <tr>
+    <td width="100%">
+      <h3>🌡️ Heat Pump Monitoring System</h3>
+      <p>End-to-end <b>industrial IoT monitoring system</b> for heat pumps — from RS485 field-bus acquisition to cloud dashboard, fully configurable in the field via a captive portal — no laptop required.</p>
+
+```
+[ Heat Pump ]
+     │  RS485 (Modbus RTU)
+     ▼
+[ RS485 → TTL Converter ]
+     │  UART
+     ▼
+[ ESP32 Firmware ]
+     ├── Modbus register polling & data parsing
+     ├── config.json  ◄──── APConnect Captive Portal (user input)
+     │     └── LittleFS (ESP32 flash)
+     ├── Ethernet ──────────────────────┐
+     └── GSM Module (fallback) ─────────┤
+                                        ▼
+                              [ MQTT Broker ]
+                                        │
+                                        ▼
+                              [ Cloud Dashboard ]
+```
+
+      <b>Key Features:</b>
+      <ul>
+        <li>Modbus RTU polling over RS485-to-TTL UART bridge — reads heat pump registers (temperatures, pressures, operating states)</li>
+        <li>Parsed data published to configurable MQTT topics on a remote broker</li>
+        <li>Dual-path uplink — <b>Ethernet</b> as primary, <b>GSM module</b> as automatic fallback</li>
+        <li><b>APConnect captive portal</b> — device creates a Wi-Fi AP; user configures everything from a browser, no flashing required</li>
+        <li>User-configurable Modbus parameters: <code>baud rate</code>, <code>parity</code>, <code>device ID</code>, <code>slave ID</code>, <code>register addresses</code></li>
+        <li>All settings persisted to <code>config.json</code> stored on <b>LittleFS</b> in ESP32 internal flash — survives power cycles</li>
+        <li>Live dashboard visualization of heat pump telemetry in real time</li>
+      </ul>
+      <p>
+        <img src="https://img.shields.io/badge/ESP32-E7352C?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Modbus%20RS485-FF6600?style=flat-square"/>
+        <img src="https://img.shields.io/badge/MQTT-660066?style=flat-square"/>
+        <img src="https://img.shields.io/badge/LittleFS-00A86B?style=flat-square"/>
+        <img src="https://img.shields.io/badge/GSM-4A90D9?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Ethernet-0078D4?style=flat-square"/>
+        <img src="https://img.shields.io/badge/APConnect-1E1E1E?style=flat-square"/>
+        <img src="https://img.shields.io/badge/C%2FC++-00599C?style=flat-square"/>
+      </p>
+    </td>
+  </tr>
   <tr>
     <td width="50%">
       <h3>🐧 Custom Yocto BSP — Renesas RZ/G2L</h3>
@@ -169,8 +217,6 @@ I work at the intersection of **hardware and software** — designing and verify
         <img src="https://img.shields.io/badge/Modbus-FF6600?style=flat-square"/>
       </p>
     </td>
-  </tr>
-  <tr>
     <td width="50%">
       <h3>🔲 STM32 — Real-Time Motor Controller</h3>
       <p>Precision PWM-based BLDC motor controller on STM32 with encoder feedback loop.</p>
@@ -187,6 +233,8 @@ I work at the intersection of **hardware and software** — designing and verify
         <img src="https://img.shields.io/badge/C-00599C?style=flat-square"/>
       </p>
     </td>
+  </tr>
+  <tr>
     <td width="50%">
       <h3>🔌 Protocol Debug — I2C / SPI / UART Analyzer</h3>
       <p>Python-based logic analyzer decoder for automated protocol correctness validation.</p>
@@ -203,6 +251,22 @@ I work at the intersection of **hardware and software** — designing and verify
         <img src="https://img.shields.io/badge/SPI-4A90D9?style=flat-square"/>
       </p>
     </td>
+    <td width="50%">
+      <h3>🍓 Raspberry Pi — Hardware Testing Framework</h3>
+      <p>Automated hardware validation suite for PCB bring-up and peripheral testing on Raspberry Pi CM4.</p>
+      <ul>
+        <li>GPIO, SPI, I2C, and UART loopback test scripts</li>
+        <li>Ethernet link & throughput validation</li>
+        <li>Pass/fail logging with JSON reports</li>
+        <li>Designed for factory-floor production testing</li>
+      </ul>
+      <p>
+        <img src="https://img.shields.io/badge/Raspberry%20Pi-A22846?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square"/>
+        <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logoColor=black"/>
+        <img src="https://img.shields.io/badge/GPIO-4EAA25?style=flat-square"/>
+      </p>
+    </td>
   </tr>
 </table>
 
@@ -210,28 +274,8 @@ I work at the intersection of **hardware and software** — designing and verify
 
 ## 🏆 Achievements
 
-| 🏆 | **TNSCST Competition** | Participated in the Govt Organized competition and received Fund for the project |
-
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img width="49%" src="https://github-readme-stats-fast.vercel.app/api?username=YOUR-USERNAME&show_icons=true&theme=chartreuse-dark&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" />
-  <img width="49%" src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR-USERNAME&theme=chartreuse-dark&hide_border=true" />
-</p>
-
-<p align="center">
-  <img width="42%" src="https://github-readme-stats-fast.vercel.app/api/top-langs/?username=YOUR-USERNAME&theme=chartreuse-dark&hide_border=true&layout=compact&langs_count=8" />
-</p>
-
----
-
-## 📈 Contribution Graph
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR-USERNAME&theme=chartreuse-dark&hide_border=true&area=true&color=00ff88&line=00cc66&point=ffffff" />
-</p>
+| 🏆 | **TNSCST Competition** | Participated in the Govt. organized competition and received funding for the project |
+|---|---|---|
 
 ---
 
@@ -241,9 +285,10 @@ I work at the intersection of **hardware and software** — designing and verify
 ✔  Linux BSP development — Yocto, Buildroot, custom meta-layers
 ✔  Board bring-up from bare silicon — schematic review to booting Linux
 ✔  Firmware engineering — bare-metal C, RTOS, HAL, device drivers
-✔  Deep protocol knowledge — UART, SPI, I2C, Ethernet, CAN, USB
+✔  Deep protocol knowledge — UART, SPI, I2C, Ethernet, CAN, Modbus RS485
 ✔  Hardware debug — oscilloscope, logic analyzer, JTAG/SWD, GDB
 ✔  Platforms — Renesas RZ/G2L, RA6E2, RL786 | STM32 | RPi | ESP32
+✔  IoT systems — MQTT, GSM, LittleFS, captive portal configuration
 ✔  Open to Embedded Linux / Firmware / BSP roles — internship or full-time
 ```
 
